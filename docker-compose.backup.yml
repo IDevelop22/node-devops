@@ -1,0 +1,12 @@
+version: '3'
+services:
+  node-app:
+    build: .
+    ports:
+      - "3000:4700"
+    volumes:
+      - . :/app
+      - /app/node_modules
+    environment:
+      - PORT=4700
+    
