@@ -77,7 +77,13 @@ docker-compose up --build
 
 2. Copy your application code and Docker Compose configuration to your EC2 instance.
 
-3. Run your Docker containers on the EC2 instance.
+3. Run your Docker compose up -f (dev or prod file) on the EC2 instance.
+
+### Future Improvements
+1. Add Tests and quality gates for sonarcube
+2. Extend jenkins pipeline to push images and have multiple environments (currently on prod is hosted,dev is run locally with docker compose)
+3. Use Managed database to decouple database from app server and allow for easy auto scaling
+4. Add server metric monitoring with auto scaling for app server
 
 ## Support and Contributions
 
@@ -89,9 +95,5 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-### Future Improvements
-1. Add Tests and quality gates for sonarcube
-2. Extend jenkins pipeline to push images and have multiple environments (currently on prod is hosted,dev is run locally with docker compose)
-3. Use Managed database to decouple database from app server and allow for easy auto scaling
-4. Add server metric monitoring with auto scaling for app server
+
 Customize this README with your specific project information, and provide more detailed instructions for the installation, configuration, and usage of your application. Additionally, make sure to replace `yourusername` and `your-repo` with your actual GitHub username and repository name.
